@@ -1,0 +1,30 @@
+*{ margin: 0; padding: 0; outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body{
+margin: 0;	
+padding: 0;				
+font-size: 0;
+background-color: #FFFFFF;
+/*overflow-x: hidden;*/
+}
+
+.cabecera{
+	background-color: #F5F5F5;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	color:#fff;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	font-size: 20px;
+	font-weight: 300;
+	height: 70px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: fixed;
+	text-align: left;
+	width: 100%;
+}
+.elemento{
+	border-right: 3px rgba(0, 0, 0, 0.2);
+	color: #333333;
+	display: inline-block;
+}
