@@ -1,16 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:200,300);
 *{ margin: 0; padding: 0; outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
 body{
-margin: 0;	
-padding: 0;				
-font-size: 0;
-background-color: #FFFFFF;
-/*overflow-x: hidden;*/
+	color: #333333;
+	margin: 0;	
+	padding: 0;				
+	font-size: 0;
+	font-family: 'Lato';
+	background-color: #FFFFFF;
+	display: block;
+	/*overflow-x: hidden;*/
+}
+h1{
+	font-size: 60px;
 }
 
-.cabecera{
+.menu{
 	background-color: #F5F5F5;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-	color:#fff;
 	display: flex;
 	justify-content:space-between;
 	align-items:center;
@@ -23,8 +30,49 @@ background-color: #FFFFFF;
 	text-align: left;
 	width: 100%;
 }
-.elemento{
+.element{
 	border-right: 3px rgba(0, 0, 0, 0.2);
-	color: #333333;
 	display: inline-block;
+}
+.landscape{
+	/* Image location */
+	background-image: url(../imgs/office_view.jpg);
+
+	/* We make sure that the background image is 
+	vertical centered and horizontally at all times */
+	background-position: center center;
+
+	/* The background image is not repeated*/
+	background-repeat: no-repeat;
+
+	/* The background image is fixed on the viewport, 
+	so it will not move when content height exceeds the height of the image.*/
+	background-attachment: fixed;
+
+	/* The background image is rescaled when 
+	the browser window width is changed */
+	background-size: cover;
+
+	/* the background color is set to be displayed 
+	while charging the background image or if there are problems to load  */
+	background-color: #F5F8FA;
+
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	height: 100vh;
+	/*margin-bottom: 50px;*/
+	/*padding: 75px 0 0 0;*/
+	/*position: absolute;*/
+}
+.Services{
+	margin: 0 25px 0 25px;
+	/*background-color: #784F3A;*/
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	/*position: relative;*/
+}
+.Services-element{
+	font-size: 18px;
 }
