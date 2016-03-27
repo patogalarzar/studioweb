@@ -7,14 +7,18 @@ body{
 	padding: 0;				
 	font-size: 0;
 	font-family: 'Lato';
-	background-color: #FFFFFF;
+	background-color: #F2F2F2;
 	display: block;
 	/*overflow-x: hidden;*/
 }
 h1{
 	font-size: 60px;
 }
-
+p{
+	font-size: 15px;
+	margin: 10px;
+	text-align: justify;
+}
 .menu{
 	background-color: #F5F5F5;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -61,18 +65,29 @@ h1{
 	justify-content:center;
 	align-items:center;
 	height: 100vh;
-	/*margin-bottom: 50px;*/
+	/*margin-bottom: 10px;*/
 	/*padding: 75px 0 0 0;*/
 	/*position: absolute;*/
 }
 .Services{
 	margin: 0 25px 0 25px;
-	/*background-color: #784F3A;*/
+	background-color: #FFFFFF;
 	display: flex;
-	justify-content:space-between;
-	align-items:center;
-	/*position: relative;*/
+	flex-wrap: wrap;
+	justify-content:space-around;
+	align-items: initial;
+	padding: 5px;
 }
 .Services-element{
-	font-size: 18px;
+	font-size: 32px;
+	/*margin-bottom: 5px;*/
+	padding: 5px;
+	text-align: center;
+	width: 300px;
+}
+.Services-container{
+	border: 3px solid #333333;
+	border-radius: 5px;
+	margin-bottom: 3px;
+	width: 100%;
 }
