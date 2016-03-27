@@ -75,19 +75,26 @@ p{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:space-around;
-	align-items: initial;
+	align-items: flex-start;
 	padding: 5px;
 }
 .Services-element{
+	/*border: 1px solid #F2F2F2;*/
+	border-radius: 10px;
+	border-top: 8px solid #333333;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	font-size: 32px;
-	/*margin-bottom: 5px;*/
-	padding: 5px;
+	margin-bottom: 3px;
+	/*padding: 5px;*/
 	text-align: center;
 	width: 300px;
 }
-.Services-container{
-	border: 3px solid #333333;
-	border-radius: 5px;
-	margin-bottom: 3px;
+.Services-header{
+	color: #FFFFFF;
+	background-color: #333333;
 	width: 100%;
+}
+.Smallimage{
+	height: 220px;
+	width: 300px;
 }
