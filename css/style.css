@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:200,300);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,200,300);
 *{ margin: 0; padding: 0; outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 body{
@@ -7,12 +7,18 @@ body{
 	padding: 0;				
 	font-size: 0;
 	font-family: 'Lato';
+	font-weight: 300;
 	background-color: #F2F2F2;
 	display: block;
 	/*overflow-x: hidden;*/
 }
+a{
+	list-style: none;
+	text-decoration: none;
+}
 h1{
-	font-size: 60px;
+	font-size: 56px;
+	font-weight: 300;
 }
 p{
 	font-size: 15px;
@@ -35,8 +41,12 @@ p{
 	width: 100%;
 }
 .element{
-	border-right: 3px rgba(0, 0, 0, 0.2);
 	display: inline-block;
+	/*font-weight: 200px;*/
+	font-size: 20px;
+}
+.element a{
+	color: #333333;
 }
 .landscape{
 	/* Image location */
@@ -87,14 +97,27 @@ p{
 	margin-bottom: 3px;
 	/*padding: 5px;*/
 	text-align: center;
-	width: 300px;
+	width: 350px;
 }
 .Services-header{
 	color: #FFFFFF;
 	background-color: #333333;
 	width: 100%;
 }
+.sidemenu-container{
+	background-color: #333333;
+	display: inline-block;
+	font-size: 14px;
+	min-width: 275px;
+	width: 20%;
+}
+.sidemenu{
+	width: 100%;
+}
 .Smallimage{
 	height: 220px;
-	width: 300px;
+	width: 270px;
+}
+.Wrapper{
+	border-top: 1px solid #333333;
 }
