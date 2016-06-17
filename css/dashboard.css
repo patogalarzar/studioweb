@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	background: #27ae60;
+	height: 100px;
+	left: 230px;
+	top: 0;
+	position: fixed;
+	width: calc(100% - 230px);
+}
+aside{
+	background: #34495e;
+	font-family: 'Lato', sans-serif;
+	height: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	position: fixed;
+	width: 230px;
+}
+#box-profile{
+	background: #2ecc71;
+	height: 100px;
+	overflow: hidden;
+	width: 230px;
+}
+.img-profile{
+	border-radius: 60px;
+	display: block;
+	float: left;
+	height: 50px;
+	margin: 25px 0 25px 20px;
+	width: 74px;
+}
+.name-user{
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	line-height: 20px;
+	margin: 40px 0px 40px 15px;
+	position: relative;
+	width: auto;
+}
+input[id="show-menu"]{
+	display: none;
+}
+aside nav ul{
+	display: block;
+	list-style: none;
+	width: 100%;
+	margin-top: 30px;
+}
+aside nav ul li{
+	display: block;
+	width: 230px;
+	height: auto;
+
+}
+aside nav ul li:hover {
+	border-left: 3px solid #27ae60;
+}
+ul li a, label{
+	display: block;
+	text-indent: 20px;
+	width: 100%;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 18px 0;
+	text-decoration: none;
+	cursor: pointer;
+	color: #CCCCCC;
+}
+/*sub-menu*/
+aside input[id="show-menu"]:checked + nav ul li ul{
+	/*display: block;*/
+	height: 150px;
+}
+
+.sub-menu{
+	/*display: none;*/
+	overflow: hidden;
+	margin-top: 0;
+	background: #2c3e50;
+	height: 0;
+	transition: 1s;
+}
