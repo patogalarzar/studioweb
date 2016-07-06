@@ -2,9 +2,28 @@ html, body{
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 	background-color: #F3F3F4;
 	color: #676a6c;
+	height: 100%;
 }
 .box{
 	border:1px red dotted;
+}
+.display-table{
+	display: table;
+	padding: 0px;
+	height: 100%;
+}
+.display-table-row{
+	display: table-row;
+	height: 100%;
+}
+.display-table-cell{
+	display: table-cell;
+	float: none;
+	height: 100%;
+}
+/*vertical align*/
+.valign-top{
+	vertical-align: top;
 }
 #side-menu{
 	background-color: #2f4050;
