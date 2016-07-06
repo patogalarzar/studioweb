@@ -7,7 +7,4 @@
                 bodyEl.toggleClass('active-nav');
                 e.preventDefault();
             });
-            
-            
-            
-        })();
+})();

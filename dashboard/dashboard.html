@@ -5,6 +5,7 @@
 	<title>StudioWeb | Dashboard</title>
 	<link rel="icon" type="image/png" href="../favicon.ico">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,200,300">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/dashboard.css">
 </head>
 <body>
@@ -16,20 +17,33 @@
 		<input type="checkbox" id="show-menu">
 		<nav>
 			<ul>
-				<li><a href="#">Dashboard</a></li>
-				<li><a href="#">Photos</a></li>
+				<li><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
+				<li><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>Photos</a></li>
 				<li>
-					<label for="show-menu">Friends</label>
+					<label for="show-menu"><i class="fa fa-users" aria-hidden="true"></i>Friends<i class="icono-d fa fa-angle-down" aria-hidden="true"></i></label>
 					<ul class="sub-menu">
-						<li><a href="#">All</a></li>
-						<li><a href="#">Blocked</a></li>
-						<li><a href="#">Online</a></li>
+						<li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i>All</a></li>
+						<li><a href="#"><i class="fa fa-ban" aria-hidden="true"></i>Blocked</a></li>
+						<li><a href="#"><i class="fa fa-plug" aria-hidden="true"></i>Online</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
 			</ul>
 		</nav>
 	</aside>
-	<header></header>
+	<header><a href="#" class="nav-toggle-btn"><i class="fa fa-bars fa-2x"></i></a></header>
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript">
+		(function() {
+            
+            var bodyEl = $('body'),
+                navToggleBtn = bodyEl.find('.nav-toggle-btn');
+            
+            navToggleBtn.on('click', function(e) {
+                bodyEl.toggleClass('inactive-nav');
+                e.preventDefault();
+            });
+		})();
+	</script>
 </body>
 </html>

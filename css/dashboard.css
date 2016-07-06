@@ -8,7 +8,17 @@ header{
 	left: 230px;
 	top: 0;
 	position: fixed;
-	width: calc(100% - 230px);
+	width:100%;
+	/*width: calc(100% - 230px);*/
+	transition: transform 0.4s ease;
+}
+header a{
+	top: 5px;
+	text-decoration: none;
+}
+header a i{
+	margin-left: 6px;
+    margin-top: 4px;
 }
 aside{
 	background: #34495e;
@@ -19,12 +29,25 @@ aside{
 	overflow: hidden;
 	position: fixed;
 	width: 230px;
+	transform:translate3d(0,0,0);
+    transition: transform 0.4s ease;
+}
+.inactive-nav aside{
+	transform:translate3d(-230px,0,0);
+}
+.inactive-nav header {
+	transform: translate3d(-230px, 0, 0);
+	/*width:100%;*/
 }
 #box-profile{
 	background: #2ecc71;
 	height: 100px;
 	overflow: hidden;
 	width: 230px;
+}
+.icono-d{
+	float: right;
+	margin-right: 3px;
 }
 .img-profile{
 	border-radius: 60px;
@@ -45,6 +68,18 @@ aside{
 	position: relative;
 	width: auto;
 }
+.nav-toggle-btn{
+    border-radius: 3px;
+    color: #27ae60;
+	display: block;
+	position: absolute;
+	/*left: 200px;*/
+    margin-left: 3px;
+    margin-top: 25px;
+	width: 40px;
+	height: 40px;
+	background-color: #FFFFFF;
+}
 input[id="show-menu"]{
 	display: none;
 }
@@ -59,6 +94,9 @@ aside nav ul li{
 	width: 230px;
 	height: auto;
 
+}
+aside nav ul li i{
+	padding-right: 10px;
 }
 aside nav ul li:hover {
 	border-left: 3px solid #27ae60;
