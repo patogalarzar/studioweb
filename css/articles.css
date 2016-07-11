@@ -1,0 +1,36 @@
+.btn-default{
+	color: #676a6c;
+	border: 1px #EEE solid;
+}
+.btn-default:hover{
+	color: #676a6c;
+	background-color: #F3F3F4;
+	border: 1px #EEE solid;
+}
+.article-row p{
+	font-size: 16px;
+	margin-bottom: 0px;
+	font-weight: 400;
+}
+.status-padding{
+	padding-top: 10px;
+}
+.article-title small{
+	color: #BBBBBB;
+}
+@media (max-width: 991px) {
+	.article-title{
+		padding-left: 30px;
+	}
+}
+@media(min-width: 767px){
+	.article-actions{
+		float: right;
+	}
+}
+@media(max-width: 767px){
+	.article-actions{
+		padding-left: 10px;
+		margin-top: 10px;
+	}
+}
